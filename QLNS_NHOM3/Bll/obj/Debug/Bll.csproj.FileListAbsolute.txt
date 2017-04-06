@@ -1,0 +1,9 @@
+c:\users\xuantruong\documents\visual studio 2015\Projects\QLNS_NHOM3\Bll\bin\Debug\Bll.dll
+c:\users\xuantruong\documents\visual studio 2015\Projects\QLNS_NHOM3\Bll\bin\Debug\Bll.pdb
+c:\users\xuantruong\documents\visual studio 2015\Projects\QLNS_NHOM3\Bll\bin\Debug\Dal.dll
+c:\users\xuantruong\documents\visual studio 2015\Projects\QLNS_NHOM3\Bll\bin\Debug\Dao.dll
+c:\users\xuantruong\documents\visual studio 2015\Projects\QLNS_NHOM3\Bll\bin\Debug\Dal.pdb
+c:\users\xuantruong\documents\visual studio 2015\Projects\QLNS_NHOM3\Bll\bin\Debug\Dao.pdb
+c:\users\xuantruong\documents\visual studio 2015\Projects\QLNS_NHOM3\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+c:\users\xuantruong\documents\visual studio 2015\Projects\QLNS_NHOM3\Bll\obj\Debug\Bll.dll
+c:\users\xuantruong\documents\visual studio 2015\Projects\QLNS_NHOM3\Bll\obj\Debug\Bll.pdb
