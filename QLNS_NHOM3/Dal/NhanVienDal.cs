@@ -14,7 +14,7 @@ namespace Dal
         public SqlDataAdapter Da;
         public SqlCommand Cmd;
         public DataTable Dt;
-        public SqlConnection Conn = new SqlConnection(@"Data Source=TRAM-2;Initial Catalog=QLNS_TRAM2;Integrated Security=True");
+        public SqlConnection Conn = new SqlConnection(@"Data Source=.;Initial Catalog=QLNS_TRAM2;User ID=sa;Password=123");
         public DataTable GetAllNhanVien()
         {
            

@@ -42,5 +42,16 @@ namespace QLNS_NHOM3.Properties {
                 return ((string)(this["QLNS_TRAM2ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TRAM-2;Initial Catalog=QLNS_TRAM2;Persist Security Info=True;User ID=" +
+            "sa;Password=123")]
+        public string QLNS_TRAM2ConnectionString1 {
+            get {
+                return ((string)(this["QLNS_TRAM2ConnectionString1"]));
+            }
+        }
     }
 }
