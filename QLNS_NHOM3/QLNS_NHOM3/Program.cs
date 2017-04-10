@@ -16,7 +16,7 @@ namespace QLNS_NHOM3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmQLNV());
+            Application.Run(new Login());
         }
     }
 }

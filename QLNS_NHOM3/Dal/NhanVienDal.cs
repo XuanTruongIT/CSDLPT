@@ -14,7 +14,7 @@ namespace Dal
         public SqlDataAdapter Da;
         public SqlCommand Cmd;
         public DataTable Dt;
-        public SqlConnection Conn = new SqlConnection(@"Data Source=.;Initial Catalog=QLNS;Integrated Security=True");
+        public SqlConnection Conn = new SqlConnection(@"Data Source=TRAM-2;Initial Catalog=QLNS_TRAM2;Integrated Security=True");
         public DataTable GetAllNhanVien()
         {
            
@@ -35,13 +35,13 @@ namespace Dal
             return Dt;
         }
 
-        public void DongBo()
+      /*  public void DongBo()
         {
             Conn.Open();
             string sql = @"EXEC msdb.dbo.sp_start_job 'XUANTRUONG-QLNS-Rep1-TRAM-2-22';";
             Cmd = new SqlCommand(sql,Conn);
             Cmd.ExecuteNonQuery();
             Conn.Close();
-        }
+        }*/
     }
 }

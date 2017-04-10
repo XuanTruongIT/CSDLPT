@@ -22,9 +22,9 @@ namespace Bll
             return _nhanVienDal.GetTenChuyenMonById();
         }
 
-        public void DongBo()
+        /*public void DongBo()
         {
             _nhanVienDal.DongBo();
-        }
+        }*/
     }
 }
