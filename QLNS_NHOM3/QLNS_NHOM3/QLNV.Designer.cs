@@ -68,27 +68,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblRowCount = new System.Windows.Forms.Label();
-            this.qLNS_TRAM2DataSet = new QLNS_NHOM3.QLNS_TRAM2DataSet();
-            this.qLNS_TRAM2DataSet1 = new QLNS_NHOM3.QLNS_TRAM2DataSet1();
-            this.pHONGBANBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.pHONGBANTableAdapter1 = new QLNS_NHOM3.QLNS_TRAM2DataSet1TableAdapters.PHONGBANTableAdapter();
-            this.qLNS_TRAM2DataSet2 = new QLNS_NHOM3.QLNS_TRAM2DataSet2();
-            this.cHINHANHBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.cHINHANHTableAdapter2 = new QLNS_NHOM3.QLNS_TRAM2DataSet2TableAdapters.CHINHANHTableAdapter();
-            this.qLNS_TRAM2DataSet3 = new QLNS_NHOM3.QLNS_TRAM2DataSet3();
-            this.tDHVBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.qLNS_TRAM2DataSet4 = new QLNS_NHOM3.QLNS_TRAM2DataSet4();
-            this.cHUYENMONBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cHUYENMONTableAdapter = new QLNS_NHOM3.QLNS_TRAM2DataSet4TableAdapters.CHUYENMONTableAdapter();
-            this.qLNS_TRAM2DataSet5 = new QLNS_NHOM3.QLNS_TRAM2DataSet5();
-            this.pHONGBANBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pHONGBANTableAdapter = new QLNS_NHOM3.QLNS_TRAM2DataSet5TableAdapters.PHONGBANTableAdapter();
-            this.qLNS_TRAM2DataSet6 = new QLNS_NHOM3.QLNS_TRAM2DataSet6();
-            this.cHINHANHBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.cHINHANHTableAdapter1 = new QLNS_NHOM3.QLNS_TRAM2DataSet6TableAdapters.CHINHANHTableAdapter();
-            this.qLNS_TRAM2DataSet7 = new QLNS_NHOM3.QLNS_TRAM2DataSet7();
-            this.tDHVBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.tDHVTableAdapter1 = new QLNS_NHOM3.QLNS_TRAM2DataSet7TableAdapters.TDHVTableAdapter();
+           
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaCM = new System.Windows.Forms.DataGridViewComboBoxColumn();
@@ -105,21 +85,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tDHVBindingSource)).BeginInit();
           //  ((System.ComponentModel.ISupportInitialize)(this.qLNSDataSet4)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHINHANHBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tDHVBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHINHANHBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tDHVBindingSource2)).BeginInit();
+            
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -477,105 +443,7 @@
             this.lblRowCount.Size = new System.Drawing.Size(83, 16);
             this.lblRowCount.TabIndex = 1;
             this.lblRowCount.Text = "lblRowCount";
-            // 
-            // qLNS_TRAM2DataSet
-            // 
-            this.qLNS_TRAM2DataSet.DataSetName = "QLNS_TRAM2DataSet";
-            this.qLNS_TRAM2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // qLNS_TRAM2DataSet1
-            // 
-            this.qLNS_TRAM2DataSet1.DataSetName = "QLNS_TRAM2DataSet1";
-            this.qLNS_TRAM2DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pHONGBANBindingSource1
-            // 
-            this.pHONGBANBindingSource1.DataMember = "PHONGBAN";
-            this.pHONGBANBindingSource1.DataSource = this.qLNS_TRAM2DataSet1;
-            // 
-            // pHONGBANTableAdapter1
-            // 
-            this.pHONGBANTableAdapter1.ClearBeforeFill = true;
-            // 
-            // qLNS_TRAM2DataSet2
-            // 
-            this.qLNS_TRAM2DataSet2.DataSetName = "QLNS_TRAM2DataSet2";
-            this.qLNS_TRAM2DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cHINHANHBindingSource2
-            // 
-            this.cHINHANHBindingSource2.DataMember = "CHINHANH";
-            this.cHINHANHBindingSource2.DataSource = this.qLNS_TRAM2DataSet2;
-            // 
-            // cHINHANHTableAdapter2
-            // 
-            this.cHINHANHTableAdapter2.ClearBeforeFill = true;
-            // 
-            // qLNS_TRAM2DataSet3
-            // 
-            this.qLNS_TRAM2DataSet3.DataSetName = "QLNS_TRAM2DataSet3";
-            this.qLNS_TRAM2DataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tDHVBindingSource1
-            // 
-            this.tDHVBindingSource1.DataMember = "TDHV";
-            this.tDHVBindingSource1.DataSource = this.qLNS_TRAM2DataSet3;
-            // 
-            // qLNS_TRAM2DataSet4
-            // 
-            this.qLNS_TRAM2DataSet4.DataSetName = "QLNS_TRAM2DataSet4";
-            this.qLNS_TRAM2DataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cHUYENMONBindingSource
-            // 
-            this.cHUYENMONBindingSource.DataMember = "CHUYENMON";
-            this.cHUYENMONBindingSource.DataSource = this.qLNS_TRAM2DataSet4;
-            // 
-            // cHUYENMONTableAdapter
-            // 
-            this.cHUYENMONTableAdapter.ClearBeforeFill = true;
-            // 
-            // qLNS_TRAM2DataSet5
-            // 
-            this.qLNS_TRAM2DataSet5.DataSetName = "QLNS_TRAM2DataSet5";
-            this.qLNS_TRAM2DataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pHONGBANBindingSource
-            // 
-            this.pHONGBANBindingSource.DataMember = "PHONGBAN";
-            this.pHONGBANBindingSource.DataSource = this.qLNS_TRAM2DataSet5;
-            // 
-            // pHONGBANTableAdapter
-            // 
-            this.pHONGBANTableAdapter.ClearBeforeFill = true;
-            // 
-            // qLNS_TRAM2DataSet6
-            // 
-            this.qLNS_TRAM2DataSet6.DataSetName = "QLNS_TRAM2DataSet6";
-            this.qLNS_TRAM2DataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cHINHANHBindingSource1
-            // 
-            this.cHINHANHBindingSource1.DataMember = "CHINHANH";
-            this.cHINHANHBindingSource1.DataSource = this.qLNS_TRAM2DataSet6;
-            // 
-            // cHINHANHTableAdapter1
-            // 
-            this.cHINHANHTableAdapter1.ClearBeforeFill = true;
-            // 
-            // qLNS_TRAM2DataSet7
-            // 
-            this.qLNS_TRAM2DataSet7.DataSetName = "QLNS_TRAM2DataSet7";
-            this.qLNS_TRAM2DataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tDHVBindingSource2
-            // 
-            this.tDHVBindingSource2.DataMember = "TDHV";
-            this.tDHVBindingSource2.DataSource = this.qLNS_TRAM2DataSet7;
-            // 
-            // tDHVTableAdapter1
-            // 
-            this.tDHVTableAdapter1.ClearBeforeFill = true;
+         
             // 
             // STT
             // 
@@ -597,7 +465,7 @@
             // MaCM
             // 
             this.MaCM.DataPropertyName = "MaCM";
-            this.MaCM.DataSource = this.cHUYENMONBindingSource;
+
             this.MaCM.FillWeight = 82.08122F;
             this.MaCM.HeaderText = "Chuyên môn";
             this.MaCM.Name = "MaCM";
@@ -606,7 +474,7 @@
             // MaPB
             // 
             this.MaPB.DataPropertyName = "MaPB";
-            this.MaPB.DataSource = this.pHONGBANBindingSource;
+
             this.MaPB.DisplayMember = "TenPB";
             this.MaPB.FillWeight = 82.08122F;
             this.MaPB.HeaderText = "Phòng ban";
@@ -617,7 +485,7 @@
             // MaCN
             // 
             this.MaCN.DataPropertyName = "MaCN";
-            this.MaCN.DataSource = this.cHINHANHBindingSource1;
+
             this.MaCN.DisplayMember = "TenCN";
             this.MaCN.FillWeight = 82.08122F;
             this.MaCN.HeaderText = "Chi nhánh";
@@ -628,7 +496,7 @@
             // MaTDHV
             // 
             this.MaTDHV.DataPropertyName = "MaTDHV";
-            this.MaTDHV.DataSource = this.tDHVBindingSource2;
+
             this.MaTDHV.DisplayMember = "TenTDHV";
             this.MaTDHV.FillWeight = 82.08122F;
             this.MaTDHV.HeaderText = "Trình độ học vấn";
@@ -696,21 +564,7 @@
           //  ((System.ComponentModel.ISupportInitialize)(this.qLNSDataSet4)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHINHANHBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tDHVBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHINHANHBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNS_TRAM2DataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tDHVBindingSource2)).EndInit();
+         
             this.ResumeLayout(false);
 
         }
@@ -755,27 +609,8 @@
         private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.ComboBox cboChuyenMon;
         private System.Windows.Forms.Button button10;
-        private QLNS_TRAM2DataSet qLNS_TRAM2DataSet;
-        private QLNS_TRAM2DataSet1 qLNS_TRAM2DataSet1;
-        private System.Windows.Forms.BindingSource pHONGBANBindingSource1;
-        private QLNS_TRAM2DataSet1TableAdapters.PHONGBANTableAdapter pHONGBANTableAdapter1;
-        private QLNS_TRAM2DataSet2 qLNS_TRAM2DataSet2;
-        private System.Windows.Forms.BindingSource cHINHANHBindingSource2;
-        private QLNS_TRAM2DataSet2TableAdapters.CHINHANHTableAdapter cHINHANHTableAdapter2;
-        private QLNS_TRAM2DataSet3 qLNS_TRAM2DataSet3;
-        private System.Windows.Forms.BindingSource tDHVBindingSource1;
-        private QLNS_TRAM2DataSet4 qLNS_TRAM2DataSet4;
-        private System.Windows.Forms.BindingSource cHUYENMONBindingSource;
-        private QLNS_TRAM2DataSet4TableAdapters.CHUYENMONTableAdapter cHUYENMONTableAdapter;
-        private QLNS_TRAM2DataSet5 qLNS_TRAM2DataSet5;
-        private System.Windows.Forms.BindingSource pHONGBANBindingSource;
-        private QLNS_TRAM2DataSet5TableAdapters.PHONGBANTableAdapter pHONGBANTableAdapter;
-        private QLNS_TRAM2DataSet6 qLNS_TRAM2DataSet6;
-        private System.Windows.Forms.BindingSource cHINHANHBindingSource1;
-        private QLNS_TRAM2DataSet6TableAdapters.CHINHANHTableAdapter cHINHANHTableAdapter1;
-        private QLNS_TRAM2DataSet7 qLNS_TRAM2DataSet7;
-        private System.Windows.Forms.BindingSource tDHVBindingSource2;
-        private QLNS_TRAM2DataSet7TableAdapters.TDHVTableAdapter tDHVTableAdapter1;
+       
+        
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
         private System.Windows.Forms.DataGridViewComboBoxColumn MaCM;
