@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="ConnectDb.cs" />
     <Compile Include="NhanVienDal.cs" />
-    <Compile Include="PhongBanDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
