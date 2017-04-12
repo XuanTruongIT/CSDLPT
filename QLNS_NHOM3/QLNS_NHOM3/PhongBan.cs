@@ -142,7 +142,7 @@ namespace QLNS_NHOM3
                 for (int i = 0; i < dataGridView1.RowCount; i++)
                 {
                     string manhanvien = dataGridView1.Rows[i].Cells["MaPB"].Value.ToString();
-                    dataGridView1.Rows[i].Cells["TenPB"].Value = 
+                    dataGridView1.Rows[i].Cells["TenPB"].Value = "";
               
                 }
             }

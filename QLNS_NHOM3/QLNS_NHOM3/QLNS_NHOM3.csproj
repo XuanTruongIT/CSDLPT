@@ -59,10 +59,25 @@
     <Compile Include="PhongBan.Designer.cs">
       <DependentUpon>PhongBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="QLNS_TRAM2DataSet8.Designer.cs">
+    <Compile Include="QLNSDataSet_ChiNhanh.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>QLNS_TRAM2DataSet8.xsd</DependentUpon>
+      <DependentUpon>QLNSDataSet_ChiNhanh.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNSDataSet_ChuyenMon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNSDataSet_ChuyenMon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNSDataSet_PhongBan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNSDataSet_PhongBan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNSDataSet_TDHV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNSDataSet_TDHV.xsd</DependentUpon>
     </Compile>
     <Compile Include="QLNV.cs">
       <SubType>Form</SubType>
@@ -99,16 +114,49 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="QLNS_TRAM2DataSet8.xsc">
-      <DependentUpon>QLNS_TRAM2DataSet8.xsd</DependentUpon>
+    <None Include="QLNSDataSet_ChiNhanh.xsc">
+      <DependentUpon>QLNSDataSet_ChiNhanh.xsd</DependentUpon>
     </None>
-    <None Include="QLNS_TRAM2DataSet8.xsd">
+    <None Include="QLNSDataSet_ChiNhanh.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLNS_TRAM2DataSet8.Designer.cs</LastGenOutput>
+      <LastGenOutput>QLNSDataSet_ChiNhanh.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="QLNS_TRAM2DataSet8.xss">
-      <DependentUpon>QLNS_TRAM2DataSet8.xsd</DependentUpon>
+    <None Include="QLNSDataSet_ChiNhanh.xss">
+      <DependentUpon>QLNSDataSet_ChiNhanh.xsd</DependentUpon>
+    </None>
+    <None Include="QLNSDataSet_ChuyenMon.xsc">
+      <DependentUpon>QLNSDataSet_ChuyenMon.xsd</DependentUpon>
+    </None>
+    <None Include="QLNSDataSet_ChuyenMon.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNSDataSet_ChuyenMon.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNSDataSet_ChuyenMon.xss">
+      <DependentUpon>QLNSDataSet_ChuyenMon.xsd</DependentUpon>
+    </None>
+    <None Include="QLNSDataSet_PhongBan.xsc">
+      <DependentUpon>QLNSDataSet_PhongBan.xsd</DependentUpon>
+    </None>
+    <None Include="QLNSDataSet_PhongBan.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNSDataSet_PhongBan.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNSDataSet_PhongBan.xss">
+      <DependentUpon>QLNSDataSet_PhongBan.xsd</DependentUpon>
+    </None>
+    <None Include="QLNSDataSet_TDHV.xsc">
+      <DependentUpon>QLNSDataSet_TDHV.xsd</DependentUpon>
+    </None>
+    <None Include="QLNSDataSet_TDHV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNSDataSet_TDHV.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNSDataSet_TDHV.xss">
+      <DependentUpon>QLNSDataSet_TDHV.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
