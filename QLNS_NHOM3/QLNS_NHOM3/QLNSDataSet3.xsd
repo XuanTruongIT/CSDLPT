@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLNSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLNSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNS_NHOM3.Properties.Settings.GlobalReference.Default.QLNSConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLNSConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLNSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNS_NHOM3.Properties.Settings.GlobalReference.Default.QLNSConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CHINHANHTableAdapter" GeneratorDataComponentClassName="CHINHANHTableAdapter" Name="CHINHANH" UserDataComponentName="CHINHANHTableAdapter">
@@ -68,7 +68,7 @@ SELECT MaCN, TenCN, rowguid FROM CHINHANH WHERE (MaCN = @MaCN)</CommandText>
   <xs:element name="QLNSDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLNSDataSet3" msprop:Generator_UserDSName="QLNSDataSet3">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="CHINHANH" msprop:Generator_TableClassName="CHINHANHDataTable" msprop:Generator_TableVarName="tableCHINHANH" msprop:Generator_TablePropName="CHINHANH" msprop:Generator_RowDeletingName="CHINHANHRowDeleting" msprop:Generator_RowChangingName="CHINHANHRowChanging" msprop:Generator_RowEvHandlerName="CHINHANHRowChangeEventHandler" msprop:Generator_RowDeletedName="CHINHANHRowDeleted" msprop:Generator_UserTableName="CHINHANH" msprop:Generator_RowChangedName="CHINHANHRowChanged" msprop:Generator_RowEvArgName="CHINHANHRowChangeEvent" msprop:Generator_RowClassName="CHINHANHRow">
+        <xs:element name="CHINHANH" msprop:Generator_TableClassName="CHINHANHDataTable" msprop:Generator_TableVarName="tableCHINHANH" msprop:Generator_RowChangedName="CHINHANHRowChanged" msprop:Generator_TablePropName="CHINHANH" msprop:Generator_RowDeletingName="CHINHANHRowDeleting" msprop:Generator_RowChangingName="CHINHANHRowChanging" msprop:Generator_RowEvHandlerName="CHINHANHRowChangeEventHandler" msprop:Generator_RowDeletedName="CHINHANHRowDeleted" msprop:Generator_RowClassName="CHINHANHRow" msprop:Generator_UserTableName="CHINHANH" msprop:Generator_RowEvArgName="CHINHANHRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaCN" msprop:Generator_ColumnVarNameInTable="columnMaCN" msprop:Generator_ColumnPropNameInRow="MaCN" msprop:Generator_ColumnPropNameInTable="MaCNColumn" msprop:Generator_UserColumnName="MaCN">

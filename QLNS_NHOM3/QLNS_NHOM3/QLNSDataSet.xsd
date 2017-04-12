@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLNSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLNSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNS_NHOM3.Properties.Settings.GlobalReference.Default.QLNSConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLNSConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLNSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNS_NHOM3.Properties.Settings.GlobalReference.Default.QLNSConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CHUYENMONTableAdapter" GeneratorDataComponentClassName="CHUYENMONTableAdapter" Name="CHUYENMON" UserDataComponentName="CHUYENMONTableAdapter">
@@ -68,7 +68,7 @@ SELECT MaCM, TenCM, rowguid FROM CHUYENMON WHERE (MaCM = @MaCM)</CommandText>
   <xs:element name="QLNSDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLNSDataSet" msprop:Generator_UserDSName="QLNSDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="CHUYENMON" msprop:Generator_TableClassName="CHUYENMONDataTable" msprop:Generator_TableVarName="tableCHUYENMON" msprop:Generator_TablePropName="CHUYENMON" msprop:Generator_RowDeletingName="CHUYENMONRowDeleting" msprop:Generator_RowChangingName="CHUYENMONRowChanging" msprop:Generator_RowEvHandlerName="CHUYENMONRowChangeEventHandler" msprop:Generator_RowDeletedName="CHUYENMONRowDeleted" msprop:Generator_UserTableName="CHUYENMON" msprop:Generator_RowChangedName="CHUYENMONRowChanged" msprop:Generator_RowEvArgName="CHUYENMONRowChangeEvent" msprop:Generator_RowClassName="CHUYENMONRow">
+        <xs:element name="CHUYENMON" msprop:Generator_TableClassName="CHUYENMONDataTable" msprop:Generator_TableVarName="tableCHUYENMON" msprop:Generator_RowChangedName="CHUYENMONRowChanged" msprop:Generator_TablePropName="CHUYENMON" msprop:Generator_RowDeletingName="CHUYENMONRowDeleting" msprop:Generator_RowChangingName="CHUYENMONRowChanging" msprop:Generator_RowEvHandlerName="CHUYENMONRowChangeEventHandler" msprop:Generator_RowDeletedName="CHUYENMONRowDeleted" msprop:Generator_RowClassName="CHUYENMONRow" msprop:Generator_UserTableName="CHUYENMON" msprop:Generator_RowEvArgName="CHUYENMONRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaCM" msprop:Generator_ColumnVarNameInTable="columnMaCM" msprop:Generator_ColumnPropNameInRow="MaCM" msprop:Generator_ColumnPropNameInTable="MaCMColumn" msprop:Generator_UserColumnName="MaCM">

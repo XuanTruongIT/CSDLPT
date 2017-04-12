@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLNSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLNSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNS_NHOM3.Properties.Settings.GlobalReference.Default.QLNSConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLNSConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLNSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNS_NHOM3.Properties.Settings.GlobalReference.Default.QLNSConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TDHVTableAdapter" GeneratorDataComponentClassName="TDHVTableAdapter" Name="TDHV" UserDataComponentName="TDHVTableAdapter">
@@ -68,7 +68,7 @@ SELECT MaTDHV, TenTDHV, rowguid FROM TDHV WHERE (MaTDHV = @MaTDHV)</CommandText>
   <xs:element name="QLNSDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLNSDataSet4" msprop:Generator_UserDSName="QLNSDataSet4">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="TDHV" msprop:Generator_TableClassName="TDHVDataTable" msprop:Generator_TableVarName="tableTDHV" msprop:Generator_TablePropName="TDHV" msprop:Generator_RowDeletingName="TDHVRowDeleting" msprop:Generator_RowChangingName="TDHVRowChanging" msprop:Generator_RowEvHandlerName="TDHVRowChangeEventHandler" msprop:Generator_RowDeletedName="TDHVRowDeleted" msprop:Generator_UserTableName="TDHV" msprop:Generator_RowChangedName="TDHVRowChanged" msprop:Generator_RowEvArgName="TDHVRowChangeEvent" msprop:Generator_RowClassName="TDHVRow">
+        <xs:element name="TDHV" msprop:Generator_TableClassName="TDHVDataTable" msprop:Generator_TableVarName="tableTDHV" msprop:Generator_RowChangedName="TDHVRowChanged" msprop:Generator_TablePropName="TDHV" msprop:Generator_RowDeletingName="TDHVRowDeleting" msprop:Generator_RowChangingName="TDHVRowChanging" msprop:Generator_RowEvHandlerName="TDHVRowChangeEventHandler" msprop:Generator_RowDeletedName="TDHVRowDeleted" msprop:Generator_RowClassName="TDHVRow" msprop:Generator_UserTableName="TDHV" msprop:Generator_RowEvArgName="TDHVRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaTDHV" msprop:Generator_ColumnVarNameInTable="columnMaTDHV" msprop:Generator_ColumnPropNameInRow="MaTDHV" msprop:Generator_ColumnPropNameInTable="MaTDHVColumn" msprop:Generator_UserColumnName="MaTDHV">

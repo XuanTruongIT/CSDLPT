@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLNSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLNSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNS_NHOM3.Properties.Settings.GlobalReference.Default.QLNSConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLNSConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLNSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNS_NHOM3.Properties.Settings.GlobalReference.Default.QLNSConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PHONGBANTableAdapter" GeneratorDataComponentClassName="PHONGBANTableAdapter" Name="PHONGBAN" UserDataComponentName="PHONGBANTableAdapter">
@@ -68,7 +68,7 @@ SELECT MaPB, TenPB, rowguid FROM PHONGBAN WHERE (MaPB = @MaPB)</CommandText>
   <xs:element name="QLNSDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLNSDataSet2" msprop:Generator_UserDSName="QLNSDataSet2">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="PHONGBAN" msprop:Generator_TableClassName="PHONGBANDataTable" msprop:Generator_TableVarName="tablePHONGBAN" msprop:Generator_TablePropName="PHONGBAN" msprop:Generator_RowDeletingName="PHONGBANRowDeleting" msprop:Generator_RowChangingName="PHONGBANRowChanging" msprop:Generator_RowEvHandlerName="PHONGBANRowChangeEventHandler" msprop:Generator_RowDeletedName="PHONGBANRowDeleted" msprop:Generator_UserTableName="PHONGBAN" msprop:Generator_RowChangedName="PHONGBANRowChanged" msprop:Generator_RowEvArgName="PHONGBANRowChangeEvent" msprop:Generator_RowClassName="PHONGBANRow">
+        <xs:element name="PHONGBAN" msprop:Generator_TableClassName="PHONGBANDataTable" msprop:Generator_TableVarName="tablePHONGBAN" msprop:Generator_RowChangedName="PHONGBANRowChanged" msprop:Generator_TablePropName="PHONGBAN" msprop:Generator_RowDeletingName="PHONGBANRowDeleting" msprop:Generator_RowChangingName="PHONGBANRowChanging" msprop:Generator_RowEvHandlerName="PHONGBANRowChangeEventHandler" msprop:Generator_RowDeletedName="PHONGBANRowDeleted" msprop:Generator_RowClassName="PHONGBANRow" msprop:Generator_UserTableName="PHONGBAN" msprop:Generator_RowEvArgName="PHONGBANRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaPB" msprop:Generator_ColumnVarNameInTable="columnMaPB" msprop:Generator_ColumnPropNameInRow="MaPB" msprop:Generator_ColumnPropNameInTable="MaPBColumn" msprop:Generator_UserColumnName="MaPB">
