@@ -12,3 +12,10 @@ E:\Git-CSDLPT\trunk\QLNS_NHOM3\Dal\bin\Debug\Dao.pdb
 E:\Git-CSDLPT\trunk\QLNS_NHOM3\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
 E:\Git-CSDLPT\trunk\QLNS_NHOM3\Dal\obj\Debug\Dal.dll
 E:\Git-CSDLPT\trunk\QLNS_NHOM3\Dal\obj\Debug\Dal.pdb
+D:\CSDLPT\trunk\QLNS_NHOM3\Dal\bin\Debug\Dal.dll
+D:\CSDLPT\trunk\QLNS_NHOM3\Dal\bin\Debug\Dal.pdb
+D:\CSDLPT\trunk\QLNS_NHOM3\Dal\bin\Debug\Dao.dll
+D:\CSDLPT\trunk\QLNS_NHOM3\Dal\bin\Debug\Dao.pdb
+D:\CSDLPT\trunk\QLNS_NHOM3\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+D:\CSDLPT\trunk\QLNS_NHOM3\Dal\obj\Debug\Dal.dll
+D:\CSDLPT\trunk\QLNS_NHOM3\Dal\obj\Debug\Dal.pdb
