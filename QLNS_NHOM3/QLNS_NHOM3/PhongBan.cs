@@ -69,8 +69,8 @@ namespace QLNS_NHOM3
             try
             {
                 PhongBanDao pbd = new PhongBanDao();
-                pbd.MaPB = txtMaPB.Text;
-                pbd.TenPB = txtTen.Text;
+                pbd.MaPb = txtMaPB.Text;
+                pbd.TenPb = txtTen.Text;
 
                 _phongBanDal.themPhongBan(pbd);
                 dataGridView1.DataSource = _phongBanBll.GetAllPhongBan();
@@ -130,7 +130,7 @@ namespace QLNS_NHOM3
         {
             PhongBanDao pbd = new PhongBanDao();
             txtMaPB.ReadOnly = true;
-            pbd.TenPB = txtTen.Text;
+            pbd.TenPb = txtTen.Text;
             _phongBanDal.suaPhongBan(pbd);
             dataGridView1.DataSource = _phongBanBll.GetAllPhongBan();
         }
