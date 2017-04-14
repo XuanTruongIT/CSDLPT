@@ -49,6 +49,8 @@ namespace QLNS_NHOM3
             //cboChuyenMon.DisplayMember = "TenCM";
             //cboChuyenMon.ValueMember = "MaCM";
             
+           //txtHoTen.DataBindings.Clear();
+           // txtHoTen.DataBindings.Add("text", _source, "HoTen");
 
         }
 
