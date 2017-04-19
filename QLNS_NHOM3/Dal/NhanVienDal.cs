@@ -15,6 +15,7 @@ namespace Dal
         public SqlDataAdapter Da;
         public SqlCommand Cmd;
         public DataTable Dt;
+        public SqlDataReader Dr;
         public SqlConnection Conn = new SqlConnection(@"Data Source=XUANTRUONG;Initial Catalog=QLNS;Persist Security Info=True;User ID=sa;Password=123");
         public DataTable GetAllNhanVien()
         {
@@ -84,6 +85,18 @@ namespace Dal
             Cmd.Parameters.AddWithValue("MaNV", maNv);
             Cmd.ExecuteNonQuery();
             Conn.Close();
+        }
+
+        public DataTable TimKiem(string sql)
+        {
+            Conn.Open();
+            Cmd = new SqlCommand(sql,Conn);
+            Cmd.ExecuteNonQuery();
+            Da = new SqlDataAdapter(Cmd);
+            Dt = new DataTable();
+            Da.Fill(Dt);
+            Conn.Close();
+            return Dt;
         }
         
     }

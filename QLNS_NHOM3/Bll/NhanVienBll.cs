@@ -39,6 +39,11 @@ namespace Bll
         {
             _nhanVienDal.XoaNv(maNv);
         }
+
+        public DataTable TimKiem(string sql)
+        {
+            return _nhanVienDal.TimKiem(sql);
+        }
         
     }
 }

@@ -237,7 +237,7 @@ namespace QLNS_NHOM3
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show(@"Are you sue ?", @"Confirmation", MessageBoxButtons.YesNo);
+            DialogResult dr = MessageBox.Show(@"Are you sue ?", @"Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
                 string maNv = txtMaNV.Text;
@@ -247,6 +247,13 @@ namespace QLNS_NHOM3
             frmQLNV_Load(sender, e);
         }
 
-       
+        
+
+        private void txtSearch_KeyUp(object sender, KeyEventArgs e)
+        {
+            string key = txtSearch.Text;
+            dataGridView1.DataSource = _nhanVienBll.TimKiem(@"SELECT * FROM dbo.NHANVIEN WHERE MaNV LIKE '%" + key + "%'  ");
+            lblRowCount.Text = string.Format("{0} bản ghi.", dataGridView1.RowCount);
+        }
     }
 }
