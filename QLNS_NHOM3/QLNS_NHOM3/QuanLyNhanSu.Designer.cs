@@ -119,6 +119,7 @@
             this.btnChucVu.Size = new System.Drawing.Size(70, 70);
             this.btnChucVu.TabIndex = 0;
             this.btnChucVu.UseVisualStyleBackColor = true;
+            this.btnChucVu.Click += new System.EventHandler(this.btnChucVu_Click);
             // 
             // label3
             // 
@@ -161,6 +162,7 @@
             this.btnChiNhanh.Size = new System.Drawing.Size(70, 70);
             this.btnChiNhanh.TabIndex = 0;
             this.btnChiNhanh.UseVisualStyleBackColor = true;
+            this.btnChiNhanh.Click += new System.EventHandler(this.btnChiNhanh_Click);
             // 
             // btnNhanVien
             // 
@@ -170,6 +172,7 @@
             this.btnNhanVien.Size = new System.Drawing.Size(70, 70);
             this.btnNhanVien.TabIndex = 0;
             this.btnNhanVien.UseVisualStyleBackColor = true;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
             // 
             // btnPhongBan
             // 
@@ -179,6 +182,7 @@
             this.btnPhongBan.Size = new System.Drawing.Size(70, 70);
             this.btnPhongBan.TabIndex = 0;
             this.btnPhongBan.UseVisualStyleBackColor = true;
+            this.btnPhongBan.Click += new System.EventHandler(this.btnPhongBan_Click);
             // 
             // label1
             // 
@@ -252,6 +256,7 @@
             this.btnDangXuat.Size = new System.Drawing.Size(70, 70);
             this.btnDangXuat.TabIndex = 1;
             this.btnDangXuat.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // frmQuanLyNhanSu
             // 
@@ -263,8 +268,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Name = "frmQuanLyNhanSu";
-            this.Text = "QuanLyNhanSu";
-           
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quản lý nhân sự";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmQuanLyNhanSu_FormClosing);
             this.pnLoad.ResumeLayout(false);
             this.pnLoad.PerformLayout();
             this.tpQuanLy.ResumeLayout(false);

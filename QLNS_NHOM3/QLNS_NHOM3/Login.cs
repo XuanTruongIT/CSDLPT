@@ -17,6 +17,7 @@ namespace QLNS_NHOM3
             InitializeComponent();
         }
 
+        
         private void frmLogin_Load(object sender, EventArgs e)
         {
             txtTaiKhoan.Focus();
@@ -49,12 +50,13 @@ namespace QLNS_NHOM3
         {
             DangNhap();
             frmQuanLyNhanSu f1 = new frmQuanLyNhanSu();
-            frmLogin f2 = new frmLogin();
+            
             if (this.txtTaiKhoan.Text == @"admin" && this.txtMatKhau.Text == @"admin")
             {
                 f1.Show();
                 this.Hide();
                 
+
 
             }
 
