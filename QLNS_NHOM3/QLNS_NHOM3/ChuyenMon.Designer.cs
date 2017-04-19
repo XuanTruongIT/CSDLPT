@@ -1,6 +1,6 @@
 ﻿namespace QLNS_NHOM3
 {
-    partial class ChuyenMon
+    partial class frmChuyenMon
     {
         /// <summary>
         /// Required designer variable.
@@ -31,11 +31,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label_mess = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dgv_chinhanh = new System.Windows.Forms.DataGridView();
+            this.txtMaCM = new System.Windows.Forms.TextBox();
+            this.dgv_chuyenmon = new System.Windows.Forms.DataGridView();
             this.MaCM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenCM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTenCM = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
@@ -43,16 +43,16 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_chinhanh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_chuyenmon)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label_mess);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.dgv_chinhanh);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtMaCM);
+            this.groupBox1.Controls.Add(this.dgv_chuyenmon);
+            this.groupBox1.Controls.Add(this.txtTenCM);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.btnXoa);
             this.groupBox1.Controls.Add(this.btnSua);
@@ -86,27 +86,27 @@
             this.label_mess.Size = new System.Drawing.Size(0, 16);
             this.label_mess.TabIndex = 31;
             // 
-            // textBox2
+            // txtMaCM
             // 
-            this.textBox2.Location = new System.Drawing.Point(133, 108);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(315, 20);
-            this.textBox2.TabIndex = 30;
+            this.txtMaCM.Location = new System.Drawing.Point(133, 108);
+            this.txtMaCM.Name = "txtMaCM";
+            this.txtMaCM.Size = new System.Drawing.Size(315, 20);
+            this.txtMaCM.TabIndex = 30;
             // 
-            // dgv_chinhanh
+            // dgv_chuyenmon
             // 
-            this.dgv_chinhanh.AllowUserToAddRows = false;
-            this.dgv_chinhanh.AllowUserToDeleteRows = false;
-            this.dgv_chinhanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_chinhanh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_chuyenmon.AllowUserToAddRows = false;
+            this.dgv_chuyenmon.AllowUserToDeleteRows = false;
+            this.dgv_chuyenmon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_chuyenmon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaCM,
             this.TenCM});
-            this.dgv_chinhanh.Location = new System.Drawing.Point(490, 108);
-            this.dgv_chinhanh.Name = "dgv_chinhanh";
-            this.dgv_chinhanh.ReadOnly = true;
-            this.dgv_chinhanh.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_chinhanh.Size = new System.Drawing.Size(480, 236);
-            this.dgv_chinhanh.TabIndex = 29;
+            this.dgv_chuyenmon.Location = new System.Drawing.Point(490, 108);
+            this.dgv_chuyenmon.Name = "dgv_chuyenmon";
+            this.dgv_chuyenmon.ReadOnly = true;
+            this.dgv_chuyenmon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_chuyenmon.Size = new System.Drawing.Size(480, 236);
+            this.dgv_chuyenmon.TabIndex = 29;
             // 
             // MaCM
             // 
@@ -125,12 +125,12 @@
             this.TenCM.Name = "TenCM";
             this.TenCM.ReadOnly = true;
             // 
-            // textBox3
+            // txtTenCM
             // 
-            this.textBox3.Location = new System.Drawing.Point(133, 177);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(315, 20);
-            this.textBox3.TabIndex = 28;
+            this.txtTenCM.Location = new System.Drawing.Point(133, 177);
+            this.txtTenCM.Name = "txtTenCM";
+            this.txtTenCM.Size = new System.Drawing.Size(315, 20);
+            this.txtTenCM.TabIndex = 28;
             // 
             // label5
             // 
@@ -176,6 +176,7 @@
             this.btnThem.TabIndex = 27;
             this.btnThem.Text = "&Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label6
             // 
@@ -186,17 +187,18 @@
             this.label6.TabIndex = 23;
             this.label6.Text = "&Mã Chuyên Môn";
             // 
-            // ChuyenMon
+            // frmChuyenMon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1015, 484);
             this.Controls.Add(this.groupBox1);
-            this.Name = "ChuyenMon";
-            this.Text = "ChuyenMon";
+            this.Name = "frmChuyenMon";
+            this.Text = "Chuyên Môn";
+            this.Load += new System.EventHandler(this.frmChuyenMon_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_chinhanh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_chuyenmon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -206,11 +208,11 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label_mess;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DataGridView dgv_chinhanh;
+        private System.Windows.Forms.TextBox txtMaCM;
+        private System.Windows.Forms.DataGridView dgv_chuyenmon;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaCM;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenCM;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTenCM;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;

@@ -87,7 +87,7 @@ namespace QLNS_NHOM3
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("Are you sure?", "Confirmation", MessageBoxButtons.YesNo,
+            DialogResult dr = MessageBox.Show(@"Are you sure?", @"Confirmation", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
