@@ -16,5 +16,9 @@ namespace QLNS_NHOM3
         {
             InitializeComponent();
         }
+
+       
+
+      
     }
 }

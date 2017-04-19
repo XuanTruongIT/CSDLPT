@@ -10,17 +10,18 @@ using System.Windows.Forms;
 
 namespace QLNS_NHOM3
 {
-    public partial class Login : Form
+    public partial class frmLogin : Form
     {
-        public Login()
+        public frmLogin()
         {
             InitializeComponent();
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void frmLogin_Load(object sender, EventArgs e)
         {
             txtTaiKhoan.Focus();
-            txtMatKhau.Focus();
+            
+
         }
         private void DangNhap()
         {
@@ -36,7 +37,7 @@ namespace QLNS_NHOM3
                      if (this.txtMatKhau.Text.Length == 0)
                     MessageBox.Show(@"Bạn chưa nhập mật khẩu");
                 else
-                         if (this.txtTaiKhoan.Text == "admin" && this.txtMatKhau.Text == "admin")
+                         if (this.txtTaiKhoan.Text == @"admin" && this.txtMatKhau.Text == @"admin")
                     MessageBox.Show(@"Đăng nhập thành công !");
                 else
 
@@ -46,12 +47,18 @@ namespace QLNS_NHOM3
          }
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            frmQLNV fm = new frmQLNV();
-            if(this.txtTaiKhoan.Text == "admin" && this.txtMatKhau.Text == "admin")
-            {
-                fm.Show();
-            }
             DangNhap();
+            frmQuanLyNhanSu f1 = new frmQuanLyNhanSu();
+            frmLogin f2 = new frmLogin();
+            if (this.txtTaiKhoan.Text == @"admin" && this.txtMatKhau.Text == @"admin")
+            {
+                f1.Show();
+                this.Hide();
+                
+
+            }
+
+
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

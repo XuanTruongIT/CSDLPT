@@ -1,6 +1,6 @@
 ﻿namespace QLNS_NHOM3
 {
-    partial class Login
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -54,17 +54,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(460, 300);
             this.panel1.TabIndex = 0;
-        
+            // 
             // txtMatKhau
             // 
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.Location = new System.Drawing.Point(197, 130);
             this.txtMatKhau.Multiline = true;
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.PasswordChar = '♥';
             this.txtMatKhau.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtMatKhau.Size = new System.Drawing.Size(250, 25);
-            this.txtMatKhau.TabIndex = 11;
+            this.txtMatKhau.TabIndex = 2;
             this.txtMatKhau.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
@@ -95,7 +95,7 @@
             this.txtTaiKhoan.Name = "txtTaiKhoan";
             this.txtTaiKhoan.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtTaiKhoan.Size = new System.Drawing.Size(250, 25);
-            this.txtTaiKhoan.TabIndex = 8;
+            this.txtTaiKhoan.TabIndex = 1;
             this.txtTaiKhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
@@ -129,7 +129,7 @@
             this.btnDangNhap.Location = new System.Drawing.Point(76, 186);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(112, 30);
-            this.btnDangNhap.TabIndex = 12;
+            this.btnDangNhap.TabIndex = 3;
             this.btnDangNhap.Text = "Đăng Nhập";
             this.btnDangNhap.UseVisualStyleBackColor = true;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
@@ -142,21 +142,22 @@
             this.btnThoat.Location = new System.Drawing.Point(314, 186);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(97, 30);
-            this.btnThoat.TabIndex = 13;
+            this.btnThoat.TabIndex = 4;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // Login
+            // frmLogin
             // 
             this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(462, 297);
             this.Controls.Add(this.panel1);
-            this.Name = "Login";
+            this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

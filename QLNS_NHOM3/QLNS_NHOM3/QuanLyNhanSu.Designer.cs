@@ -49,9 +49,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnDangXuat = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
             this.pnLoad.SuspendLayout();
             this.tpQuanLy.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -228,9 +226,7 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.btnDangXuat);
-            this.tabPage1.Controls.Add(this.btnThoat);
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -248,15 +244,6 @@
             this.label8.TabIndex = 6;
             this.label8.Text = "Đăng Xuất";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(144, 82);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 15);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Thoát";
-            // 
             // btnDangXuat
             // 
             this.btnDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.Image")));
@@ -265,15 +252,6 @@
             this.btnDangXuat.Size = new System.Drawing.Size(70, 70);
             this.btnDangXuat.TabIndex = 1;
             this.btnDangXuat.UseVisualStyleBackColor = true;
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
-            this.btnThoat.Location = new System.Drawing.Point(127, 9);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 70);
-            this.btnThoat.TabIndex = 5;
-            this.btnThoat.UseVisualStyleBackColor = true;
             // 
             // frmQuanLyNhanSu
             // 
@@ -286,6 +264,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "frmQuanLyNhanSu";
             this.Text = "QuanLyNhanSu";
+           
             this.pnLoad.ResumeLayout(false);
             this.pnLoad.PerformLayout();
             this.tpQuanLy.ResumeLayout(false);
@@ -318,8 +297,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnDangXuat;
-        private System.Windows.Forms.Button btnThoat;
     }
 }

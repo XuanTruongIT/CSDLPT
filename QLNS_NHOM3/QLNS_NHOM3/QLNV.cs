@@ -26,6 +26,7 @@ namespace QLNS_NHOM3
 
         private void frmQLNV_Load(object sender, EventArgs e)
         {
+            
              _source = new BindingSource();
             // TODO: This line of code loads data into the 'qLNSDataSet_TDHV.TDHV' table. You can move, or remove it, as needed.
             this.tDHVTableAdapter.Fill(this.qLNSDataSet_TDHV.TDHV);
