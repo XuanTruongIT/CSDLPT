@@ -1,6 +1,6 @@
 ﻿namespace QLNS_NHOM3
 {
-    partial class PhongBan
+    partial class frmPhongBan
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dgv_timkiem = new System.Windows.Forms.DataGridView();
             this.txtTimkiem = new System.Windows.Forms.TextBox();
-            this.btnTimkiem = new System.Windows.Forms.Button();
             this.dgv_phongban = new System.Windows.Forms.DataGridView();
             this.MaPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,16 +47,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_timkiem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_phongban)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dgv_timkiem);
             this.groupBox2.Controls.Add(this.txtTimkiem);
-            this.groupBox2.Controls.Add(this.btnTimkiem);
             this.groupBox2.Location = new System.Drawing.Point(23, 378);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1305, 216);
@@ -66,32 +61,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "&Tìm Kiếm";
             // 
-            // dgv_timkiem
-            // 
-            this.dgv_timkiem.AllowUserToAddRows = false;
-            this.dgv_timkiem.AllowUserToDeleteRows = false;
-            this.dgv_timkiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_timkiem.Location = new System.Drawing.Point(725, 21);
-            this.dgv_timkiem.Name = "dgv_timkiem";
-            this.dgv_timkiem.ReadOnly = true;
-            this.dgv_timkiem.Size = new System.Drawing.Size(365, 138);
-            this.dgv_timkiem.TabIndex = 19;
-            // 
             // txtTimkiem
             // 
             this.txtTimkiem.Location = new System.Drawing.Point(25, 38);
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.Size = new System.Drawing.Size(293, 20);
             this.txtTimkiem.TabIndex = 18;
-            // 
-            // btnTimkiem
-            // 
-            this.btnTimkiem.Location = new System.Drawing.Point(25, 102);
-            this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(100, 28);
-            this.btnTimkiem.TabIndex = 17;
-            this.btnTimkiem.Text = "&Tìm Kiếm";
-            this.btnTimkiem.UseVisualStyleBackColor = true;
+            this.txtTimkiem.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtTimkiem_KeyUp);
             // 
             // dgv_phongban
             // 
@@ -203,6 +179,7 @@
             this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "&Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -213,6 +190,7 @@
             this.btnSua.TabIndex = 5;
             this.btnSua.Text = "&Sửa ";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnLuu
             // 
@@ -223,6 +201,7 @@
             this.btnLuu.TabIndex = 6;
             this.btnLuu.Text = "&Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnThem
             // 
@@ -233,6 +212,7 @@
             this.btnThem.TabIndex = 7;
             this.btnThem.Text = "&Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label7
             // 
@@ -270,19 +250,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "&Phòng Ban";
             // 
-            // PhongBan
+            // frmPhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1361, 619);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
-            this.Name = "PhongBan";
+            this.Name = "frmPhongBan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PhongBan";
-            this.Load += new System.EventHandler(this.PhongBan_Load);
+            this.Load += new System.EventHandler(this.frmPhongBan_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_timkiem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_phongban)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -294,9 +274,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dgv_timkiem;
         private System.Windows.Forms.TextBox txtTimkiem;
-        private System.Windows.Forms.Button btnTimkiem;
         private System.Windows.Forms.DataGridView dgv_phongban;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPB;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenPB;

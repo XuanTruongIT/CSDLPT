@@ -26,21 +26,21 @@ namespace QLNS_NHOM3
         {
             if (txtTaiKhoan.Text.Length == 0 && txtMatKhau.Text.Length == 0)
             {
-                MessageBox.Show("Bạn chưa nhập thông tin tài khoản! ");
+                MessageBox.Show(@"Bạn chưa nhập thông tin tài khoản! ");
             }
             else
             {
                 if (this.txtTaiKhoan.Text.Length == 0)
-                    MessageBox.Show("Bạn chưa nhập tài khoản");
+                    MessageBox.Show(@"Bạn chưa nhập tài khoản");
                 else
                      if (this.txtMatKhau.Text.Length == 0)
-                    MessageBox.Show("Bạn chưa nhập mật khẩu");
+                    MessageBox.Show(@"Bạn chưa nhập mật khẩu");
                 else
                          if (this.txtTaiKhoan.Text == "admin" && this.txtMatKhau.Text == "admin")
-                    MessageBox.Show("Đăng nhập thành công !");
+                    MessageBox.Show(@"Đăng nhập thành công !");
                 else
 
-                    MessageBox.Show("Đăng nhập thất bại");
+                    MessageBox.Show(@"Đăng nhập thất bại");
             }
 
          }
