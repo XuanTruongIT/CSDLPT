@@ -46,6 +46,7 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_phongban)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -53,19 +54,20 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.txtTimkiem);
-            this.groupBox2.Location = new System.Drawing.Point(23, 378);
+            this.groupBox2.Location = new System.Drawing.Point(28, 334);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1305, 216);
+            this.groupBox2.Size = new System.Drawing.Size(682, 216);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "&Tìm Kiếm";
             // 
             // txtTimkiem
             // 
-            this.txtTimkiem.Location = new System.Drawing.Point(25, 38);
+            this.txtTimkiem.Location = new System.Drawing.Point(123, 63);
             this.txtTimkiem.Name = "txtTimkiem";
-            this.txtTimkiem.Size = new System.Drawing.Size(293, 20);
+            this.txtTimkiem.Size = new System.Drawing.Size(324, 20);
             this.txtTimkiem.TabIndex = 18;
             this.txtTimkiem.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtTimkiem_KeyUp);
             // 
@@ -102,7 +104,7 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(526, 188);
+            this.btnHuy.Location = new System.Drawing.Point(486, 204);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(100, 28);
@@ -172,7 +174,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(526, 297);
+            this.btnXoa.Location = new System.Drawing.Point(241, 204);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(100, 28);
@@ -183,7 +185,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(23, 297);
+            this.btnSua.Location = new System.Drawing.Point(133, 204);
             this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(100, 28);
@@ -194,7 +196,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(283, 188);
+            this.btnLuu.Location = new System.Drawing.Point(362, 204);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(100, 28);
@@ -205,7 +207,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(28, 188);
+            this.btnThem.Location = new System.Drawing.Point(25, 204);
             this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(100, 28);
@@ -250,6 +252,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "&Phòng Ban";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(34, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "&Search: ";
+            // 
             // frmPhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,5 +302,6 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

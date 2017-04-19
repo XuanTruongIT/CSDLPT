@@ -91,7 +91,7 @@
             this.txtMaCM.Location = new System.Drawing.Point(133, 108);
             this.txtMaCM.Name = "txtMaCM";
             this.txtMaCM.Size = new System.Drawing.Size(315, 20);
-            this.txtMaCM.TabIndex = 30;
+            this.txtMaCM.TabIndex = 0;
             // 
             // dgv_chuyenmon
             // 
@@ -130,7 +130,7 @@
             this.txtTenCM.Location = new System.Drawing.Point(133, 177);
             this.txtTenCM.Name = "txtTenCM";
             this.txtTenCM.Size = new System.Drawing.Size(315, 20);
-            this.txtTenCM.TabIndex = 28;
+            this.txtTenCM.TabIndex = 1;
             // 
             // label5
             // 
@@ -146,34 +146,37 @@
             this.btnXoa.Location = new System.Drawing.Point(352, 311);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
-            this.btnXoa.TabIndex = 24;
+            this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "&Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
             this.btnSua.Location = new System.Drawing.Point(253, 311);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
-            this.btnSua.TabIndex = 25;
+            this.btnSua.TabIndex = 4;
             this.btnSua.Text = "&Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnLuu
             // 
             this.btnLuu.Location = new System.Drawing.Point(154, 311);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
-            this.btnLuu.TabIndex = 26;
+            this.btnLuu.TabIndex = 3;
             this.btnLuu.Text = "&Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnThem
             // 
             this.btnThem.Location = new System.Drawing.Point(55, 311);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 23);
-            this.btnThem.TabIndex = 27;
+            this.btnThem.TabIndex = 2;
             this.btnThem.Text = "&Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,14 +79,13 @@
             this.cboTrinhDoHV = new System.Windows.Forms.ComboBox();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.cboChuyenMon = new System.Windows.Forms.ComboBox();
-            this.button10 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radNu = new System.Windows.Forms.RadioButton();
+            this.radNam = new System.Windows.Forms.RadioButton();
             this.cHUYENMONTableAdapter = new QLNS_NHOM3.QLNSDataSet_ChuyenMonTableAdapters.CHUYENMONTableAdapter();
             this.pHONGBANTableAdapter = new QLNS_NHOM3.QLNSDataSet_PhongBanTableAdapters.PHONGBANTableAdapter();
             this.cHINHANHTableAdapter = new QLNS_NHOM3.QLNSDataSet_ChiNhanhTableAdapters.CHINHANHTableAdapter();
             this.tDHVTableAdapter = new QLNS_NHOM3.QLNSDataSet_TDHVTableAdapters.TDHVTableAdapter();
-            this.radNam = new System.Windows.Forms.RadioButton();
-            this.radNu = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLNSDataSet_ChuyenMon)).BeginInit();
@@ -103,8 +102,8 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Silver;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
@@ -541,20 +540,10 @@
             this.cboChuyenMon.TabIndex = 7;
             this.cboChuyenMon.ValueMember = "MaCM";
             // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(512, 227);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(84, 31);
-            this.button10.TabIndex = 8;
-            this.button10.Text = "&Cập nhật";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.radNu);
             this.groupBox1.Controls.Add(this.radNam);
-            this.groupBox1.Controls.Add(this.button10);
             this.groupBox1.Controls.Add(this.cboChuyenMon);
             this.groupBox1.Controls.Add(this.dtpNgaySinh);
             this.groupBox1.Controls.Add(this.cboTrinhDoHV);
@@ -594,6 +583,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "&Danh sách nhân viên";
             // 
+            // radNu
+            // 
+            this.radNu.AutoSize = true;
+            this.radNu.Location = new System.Drawing.Point(891, 67);
+            this.radNu.Name = "radNu";
+            this.radNu.Size = new System.Drawing.Size(43, 20);
+            this.radNu.TabIndex = 10;
+            this.radNu.TabStop = true;
+            this.radNu.Text = "Nữ";
+            this.radNu.UseVisualStyleBackColor = true;
+            // 
+            // radNam
+            // 
+            this.radNam.AutoSize = true;
+            this.radNam.Location = new System.Drawing.Point(830, 66);
+            this.radNam.Name = "radNam";
+            this.radNam.Size = new System.Drawing.Size(55, 20);
+            this.radNam.TabIndex = 9;
+            this.radNam.TabStop = true;
+            this.radNam.Text = "Nam";
+            this.radNam.UseVisualStyleBackColor = true;
+            // 
             // cHUYENMONTableAdapter
             // 
             this.cHUYENMONTableAdapter.ClearBeforeFill = true;
@@ -609,28 +620,6 @@
             // tDHVTableAdapter
             // 
             this.tDHVTableAdapter.ClearBeforeFill = true;
-            // 
-            // radNam
-            // 
-            this.radNam.AutoSize = true;
-            this.radNam.Location = new System.Drawing.Point(830, 66);
-            this.radNam.Name = "radNam";
-            this.radNam.Size = new System.Drawing.Size(55, 20);
-            this.radNam.TabIndex = 9;
-            this.radNam.TabStop = true;
-            this.radNam.Text = "Nam";
-            this.radNam.UseVisualStyleBackColor = true;
-            // 
-            // radNu
-            // 
-            this.radNu.AutoSize = true;
-            this.radNu.Location = new System.Drawing.Point(891, 67);
-            this.radNu.Name = "radNu";
-            this.radNu.Size = new System.Drawing.Size(43, 20);
-            this.radNu.TabIndex = 10;
-            this.radNu.TabStop = true;
-            this.radNu.Text = "Nữ";
-            this.radNu.UseVisualStyleBackColor = true;
             // 
             // frmQLNV
             // 
@@ -690,7 +679,6 @@
         private System.Windows.Forms.ComboBox cboTrinhDoHV;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.ComboBox cboChuyenMon;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.GroupBox groupBox1;
         private QLNSDataSet_ChuyenMon qLNSDataSet_ChuyenMon;
         private System.Windows.Forms.BindingSource cHUYENMONBindingSource;

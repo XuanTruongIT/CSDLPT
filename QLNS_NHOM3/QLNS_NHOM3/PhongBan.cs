@@ -92,7 +92,7 @@ namespace QLNS_NHOM3
                 catch (Exception)
                 {
 
-                    MessageBox.Show(@"Lỗi");
+                    MessageBox.Show(@"Thêm thất bại!");
                 }
                
 
@@ -111,7 +111,7 @@ namespace QLNS_NHOM3
                 catch (Exception)
                 {
 
-                    MessageBox.Show(@"Lỗi");
+                    MessageBox.Show(@"Sửa thất bại!");
                 }
                
             }
