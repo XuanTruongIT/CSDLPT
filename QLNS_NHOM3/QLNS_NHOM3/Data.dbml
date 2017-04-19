@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLNS" Class="DataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=XUANTRUONG;Initial Catalog=QLNS;Persist Security Info=True;User ID=sa" SettingsObjectName="QLNS_NHOM3.Properties.Settings" SettingsPropertyName="QLNSConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BACLUONG" Member="BACLUONGs">
+    <Type Name="BACLUONG">
+      <Column Name="BacLuong" Member="BacLuong1" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HSLuong" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="BACLUONG_LUONG" Member="LUONGs" ThisKey="BacLuong1" OtherKey="BacLuong" Type="LUONG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TDNN" Member="TDNNs">
+    <Type Name="TDNN">
+      <Column Name="MaTDNN" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenTDNN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TrinhDo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="TDNN_NV_TDNN" Member="NV_TDNNs" ThisKey="MaTDNN" OtherKey="MaTDNN" Type="NV_TDNN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHINHANH" Member="CHINHANHs">
+    <Type Name="CHINHANH">
+      <Column Name="MaCN" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenCN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="CHINHANH_NHANVIEN" Member="NHANVIENs" ThisKey="MaCN" OtherKey="MaCN" Type="NHANVIEN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHUCVU" Member="CHUCVUs">
+    <Type Name="CHUCVU">
+      <Column Name="MaCV" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenCV" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PhuCap" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="CHUCVU_NV_CV" Member="NV_CVs" ThisKey="MaCV" OtherKey="MaCV" Type="NV_CV" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHUYENMON" Member="CHUYENMONs">
+    <Type Name="CHUYENMON">
+      <Column Name="MaCM" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenCM" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="CHUYENMON_NHANVIEN" Member="NHANVIENs" ThisKey="MaCM" OtherKey="MaCM" Type="NHANVIEN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CT_HDLD" Member="CT_HDLDs">
+    <Type Name="CT_HDLD">
+      <Column Name="MaHD" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaNV" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NgayBD" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="NgayKT" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="HDLD_CT_HDLD" Member="HDLD" ThisKey="MaHD" OtherKey="MaHD" Type="HDLD" IsForeignKey="true" />
+      <Association Name="NHANVIEN_CT_HDLD" Member="NHANVIEN" ThisKey="MaNV" OtherKey="MaNV" Type="NHANVIEN" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HDLD" Member="HDLDs">
+    <Type Name="HDLD">
+      <Column Name="MaHD" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenHD" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LoaiHD" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="HDLD_CT_HDLD" Member="CT_HDLDs" ThisKey="MaHD" OtherKey="MaHD" Type="CT_HDLD" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LUONG" Member="LUONGs">
+    <Type Name="LUONG">
+      <Column Name="MaNV" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BacLuong" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NgayLenLuong" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="BACLUONG_LUONG" Member="BACLUONG1" ThisKey="BacLuong" OtherKey="BacLuong1" Type="BACLUONG" IsForeignKey="true" />
+      <Association Name="NHANVIEN_LUONG" Member="NHANVIEN" ThisKey="MaNV" OtherKey="MaNV" Type="NHANVIEN" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LUONG_K2" Member="LUONG_K2s">
+    <Type Name="LUONG_K2">
+      <Column Name="MaNV" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Thang" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nam" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SoTiet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="NHANVIEN_LUONG_K2" Member="NHANVIEN" ThisKey="MaNV" OtherKey="MaNV" Type="NHANVIEN" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHANVIEN" Member="NHANVIENs">
+    <Type Name="NHANVIEN">
+      <Column Name="MaNV" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaCM" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MaPB" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MaCN" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MaTDHV" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="GioiTinh" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="QueQuan" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="SDT" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="NHANVIEN_CT_HDLD" Member="CT_HDLDs" ThisKey="MaNV" OtherKey="MaNV" Type="CT_HDLD" />
+      <Association Name="NHANVIEN_LUONG" Member="LUONGs" ThisKey="MaNV" OtherKey="MaNV" Type="LUONG" />
+      <Association Name="NHANVIEN_LUONG_K2" Member="LUONG_K2s" ThisKey="MaNV" OtherKey="MaNV" Type="LUONG_K2" />
+      <Association Name="NHANVIEN_NV_CV" Member="NV_CVs" ThisKey="MaNV" OtherKey="MaNV" Type="NV_CV" />
+      <Association Name="NHANVIEN_NV_TDNN" Member="NV_TDNNs" ThisKey="MaNV" OtherKey="MaNV" Type="NV_TDNN" />
+      <Association Name="CHINHANH_NHANVIEN" Member="CHINHANH" ThisKey="MaCN" OtherKey="MaCN" Type="CHINHANH" IsForeignKey="true" />
+      <Association Name="CHUYENMON_NHANVIEN" Member="CHUYENMON" ThisKey="MaCM" OtherKey="MaCM" Type="CHUYENMON" IsForeignKey="true" />
+      <Association Name="PHONGBAN_NHANVIEN" Member="PHONGBAN" ThisKey="MaPB" OtherKey="MaPB" Type="PHONGBAN" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="TDHV_NHANVIEN" Member="TDHV" ThisKey="MaTDHV" OtherKey="MaTDHV" Type="TDHV" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NV_CV" Member="NV_CVs">
+    <Type Name="NV_CV">
+      <Column Name="MaNV" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaCV" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NgayDamNhiem" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="CHUCVU_NV_CV" Member="CHUCVU" ThisKey="MaCV" OtherKey="MaCV" Type="CHUCVU" IsForeignKey="true" />
+      <Association Name="NHANVIEN_NV_CV" Member="NHANVIEN" ThisKey="MaNV" OtherKey="MaNV" Type="NHANVIEN" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NV_TDNN" Member="NV_TDNNs">
+    <Type Name="NV_TDNN">
+      <Column Name="MaNV" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaTDNN" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="NHANVIEN_NV_TDNN" Member="NHANVIEN" ThisKey="MaNV" OtherKey="MaNV" Type="NHANVIEN" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="TDNN_NV_TDNN" Member="TDNN" ThisKey="MaTDNN" OtherKey="MaTDNN" Type="TDNN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PHONGBAN" Member="PHONGBANs">
+    <Type Name="PHONGBAN">
+      <Column Name="MaPB" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenPB" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="PHONGBAN_NHANVIEN" Member="NHANVIENs" ThisKey="MaPB" OtherKey="MaPB" Type="NHANVIEN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TDHV" Member="TDHVs">
+    <Type Name="TDHV">
+      <Column Name="MaTDHV" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenTDHV" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="TDHV_NHANVIEN" Member="NHANVIENs" ThisKey="MaTDHV" OtherKey="MaTDHV" Type="NHANVIEN" />
+    </Type>
+  </Table>
+</Database>
