@@ -16,7 +16,13 @@ namespace QLNS_NHOM3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< .mine
+            Application.Run(new frmQuanLyNhanSu());
+||||||| .r38
+            Application.Run(new frmChiNhanh());
+=======
             Application.Run(new frmQLNV());
+>>>>>>> .r39
         }
     }
 }
