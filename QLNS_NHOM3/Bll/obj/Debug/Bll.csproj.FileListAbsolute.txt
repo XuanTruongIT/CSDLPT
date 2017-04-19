@@ -25,3 +25,12 @@ D:\CSDLPT\trunk\QLNS_NHOM3\Bll\bin\Debug\Dao.pdb
 D:\CSDLPT\trunk\QLNS_NHOM3\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
 D:\CSDLPT\trunk\QLNS_NHOM3\Bll\obj\Debug\Bll.dll
 D:\CSDLPT\trunk\QLNS_NHOM3\Bll\obj\Debug\Bll.pdb
+E:\Co so du lieu phan tan\BTL_Nhom3\CSDLPT\trunk\QLNS_NHOM3\Bll\bin\Debug\Bll.dll
+E:\Co so du lieu phan tan\BTL_Nhom3\CSDLPT\trunk\QLNS_NHOM3\Bll\bin\Debug\Bll.pdb
+E:\Co so du lieu phan tan\BTL_Nhom3\CSDLPT\trunk\QLNS_NHOM3\Bll\bin\Debug\Dal.dll
+E:\Co so du lieu phan tan\BTL_Nhom3\CSDLPT\trunk\QLNS_NHOM3\Bll\bin\Debug\Dao.dll
+E:\Co so du lieu phan tan\BTL_Nhom3\CSDLPT\trunk\QLNS_NHOM3\Bll\bin\Debug\Dal.pdb
+E:\Co so du lieu phan tan\BTL_Nhom3\CSDLPT\trunk\QLNS_NHOM3\Bll\bin\Debug\Dao.pdb
+E:\Co so du lieu phan tan\BTL_Nhom3\CSDLPT\trunk\QLNS_NHOM3\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+E:\Co so du lieu phan tan\BTL_Nhom3\CSDLPT\trunk\QLNS_NHOM3\Bll\obj\Debug\Bll.dll
+E:\Co so du lieu phan tan\BTL_Nhom3\CSDLPT\trunk\QLNS_NHOM3\Bll\obj\Debug\Bll.pdb
