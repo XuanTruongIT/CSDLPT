@@ -50,6 +50,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
             this.btnDangXuat = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
             this.pnLoad.SuspendLayout();
             this.tpQuanLy.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -58,7 +60,8 @@
             // 
             // btPhuCap
             // 
-            this.btPhuCap.Image = ((System.Drawing.Image)(resources.GetObject("btPhuCap.Image")));
+            this.btPhuCap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btPhuCap.BackgroundImage")));
+            this.btPhuCap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btPhuCap.Location = new System.Drawing.Point(527, 5);
             this.btPhuCap.MinimumSize = new System.Drawing.Size(70, 70);
             this.btPhuCap.Name = "btPhuCap";
@@ -71,9 +74,9 @@
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(524, 78);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(61, 15);
+            this.label22.Size = new System.Drawing.Size(86, 15);
             this.label22.TabIndex = 1;
-            this.label22.Text = "Phụ Cấp";
+            this.label22.Text = "&Chuyên Môn";
             // 
             // label12
             // 
@@ -82,7 +85,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(59, 15);
             this.label12.TabIndex = 1;
-            this.label12.Text = "Chức Vụ";
+            this.label12.Text = "&Chức Vụ";
             // 
             // label11
             // 
@@ -91,7 +94,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(74, 15);
             this.label11.TabIndex = 1;
-            this.label11.Text = "Chi Nhánh";
+            this.label11.Text = "&Chi Nhánh";
             // 
             // label10
             // 
@@ -100,7 +103,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(73, 15);
             this.label10.TabIndex = 1;
-            this.label10.Text = "Nhân Viên";
+            this.label10.Text = "&Nhân Viên";
             // 
             // label9
             // 
@@ -109,7 +112,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(77, 15);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Phòng Ban";
+            this.label9.Text = "&Phòng Ban";
             // 
             // btnChucVu
             // 
@@ -229,6 +232,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.button12);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.btnDangXuat);
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
@@ -257,6 +262,26 @@
             this.btnDangXuat.TabIndex = 1;
             this.btnDangXuat.UseVisualStyleBackColor = true;
             this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(132, 79);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 15);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "&Cập Nhật";
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.White;
+            this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button12.Location = new System.Drawing.Point(129, 6);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(70, 70);
+            this.button12.TabIndex = 7;
+            this.button12.UseVisualStyleBackColor = false;
             // 
             // frmQuanLyNhanSu
             // 
@@ -304,5 +329,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnDangXuat;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button12;
     }
 }
