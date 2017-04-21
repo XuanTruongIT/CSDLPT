@@ -39,11 +39,11 @@
             this.label_mess1 = new System.Windows.Forms.Label();
             this.txtMaCV = new System.Windows.Forms.TextBox();
             this.dgv_chucvu = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.MaCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhuCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtPhuCap = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_chucvu)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -157,6 +157,30 @@
             this.dgv_chucvu.Size = new System.Drawing.Size(487, 236);
             this.dgv_chucvu.TabIndex = 15;
             // 
+            // MaCV
+            // 
+            this.MaCV.DataPropertyName = "MaCV";
+            this.MaCV.FillWeight = 110F;
+            this.MaCV.HeaderText = "Mã Chức Vụ";
+            this.MaCV.Name = "MaCV";
+            this.MaCV.ReadOnly = true;
+            this.MaCV.Width = 110;
+            // 
+            // TenCV
+            // 
+            this.TenCV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenCV.DataPropertyName = "TenCV";
+            this.TenCV.HeaderText = "Tên Chức Vụ";
+            this.TenCV.Name = "TenCV";
+            this.TenCV.ReadOnly = true;
+            // 
+            // PhuCap
+            // 
+            this.PhuCap.DataPropertyName = "PhuCap";
+            this.PhuCap.HeaderText = "Phụ Cấp";
+            this.PhuCap.Name = "PhuCap";
+            this.PhuCap.ReadOnly = true;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -189,30 +213,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "&Chức Vụ";
             // 
-            // MaCV
-            // 
-            this.MaCV.DataPropertyName = "MaCV";
-            this.MaCV.FillWeight = 110F;
-            this.MaCV.HeaderText = "Mã Chức Vụ";
-            this.MaCV.Name = "MaCV";
-            this.MaCV.ReadOnly = true;
-            this.MaCV.Width = 110;
-            // 
-            // TenCV
-            // 
-            this.TenCV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenCV.DataPropertyName = "TenCV";
-            this.TenCV.HeaderText = "Tên Chức Vụ";
-            this.TenCV.Name = "TenCV";
-            this.TenCV.ReadOnly = true;
-            // 
-            // PhuCap
-            // 
-            this.PhuCap.DataPropertyName = "PhuCap";
-            this.PhuCap.HeaderText = "Phụ Cấp";
-            this.PhuCap.Name = "PhuCap";
-            this.PhuCap.ReadOnly = true;
-            // 
             // txtPhuCap
             // 
             this.txtPhuCap.Location = new System.Drawing.Point(144, 214);
@@ -227,6 +227,7 @@
             this.ClientSize = new System.Drawing.Size(1015, 484);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmChucVu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChucVu";
             this.Load += new System.EventHandler(this.frmChucVu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_chucvu)).EndInit();

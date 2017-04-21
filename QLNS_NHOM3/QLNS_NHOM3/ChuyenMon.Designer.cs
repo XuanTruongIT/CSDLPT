@@ -197,6 +197,7 @@
             this.ClientSize = new System.Drawing.Size(1015, 484);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmChuyenMon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chuyên Môn";
             this.Load += new System.EventHandler(this.frmChuyenMon_Load);
             this.groupBox1.ResumeLayout(false);

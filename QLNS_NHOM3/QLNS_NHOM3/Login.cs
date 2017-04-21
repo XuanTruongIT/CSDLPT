@@ -29,20 +29,32 @@ namespace QLNS_NHOM3
             if (txtTaiKhoan.Text.Length == 0 && txtMatKhau.Text.Length == 0)
             {
                 MessageBox.Show(@"Bạn chưa nhập thông tin tài khoản! ");
+                txtTaiKhoan.Focus();
             }
             else
             {
                 if (this.txtTaiKhoan.Text.Length == 0)
+                {
                     MessageBox.Show(@"Bạn chưa nhập tài khoản");
-                else
-                     if (this.txtMatKhau.Text.Length == 0)
+                    txtTaiKhoan.Focus();
+                }
+                    
+                else if (this.txtMatKhau.Text.Length == 0)
+                {
                     MessageBox.Show(@"Bạn chưa nhập mật khẩu");
-                else
-                         if (this.txtTaiKhoan.Text == @"admin" && this.txtMatKhau.Text == @"admin")
+                    txtMatKhau.Focus();
+                }
+                   
+                else if (this.txtTaiKhoan.Text == @"admin" && this.txtMatKhau.Text == @"admin")
                     MessageBox.Show(@"Đăng nhập thành công !");
                 else
 
-                    MessageBox.Show(@"Đăng nhập thất bại");
+                {
+                    MessageBox.Show(@"Đăng nhập thất bại! Tài khoản không tồn tại ");
+                    txtTaiKhoan.Clear();
+                    txtMatKhau.Clear();
+                    txtTaiKhoan.Focus();
+                }
             }
 
          }
@@ -67,6 +79,9 @@ namespace QLNS_NHOM3
             this.Close();
         }
 
-
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
