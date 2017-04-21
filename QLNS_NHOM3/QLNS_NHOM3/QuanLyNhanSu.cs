@@ -54,5 +54,11 @@ namespace QLNS_NHOM3
             frmChucVu frmChucVu = new frmChucVu();
             frmChucVu.Show();
         }
+
+        private void btnChuyenMon_Click(object sender, EventArgs e)
+        {
+            frmChuyenMon frmChuyenMon = new frmChuyenMon();
+            frmChuyenMon.Show();
+        }
     }
 }

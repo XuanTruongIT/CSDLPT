@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyNhanSu));
-            this.btPhuCap = new System.Windows.Forms.Button();
+            this.btnChuyenMon = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -44,26 +44,27 @@
             this.tpQuanLy = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label8 = new System.Windows.Forms.Label();
-            this.btnDangXuat = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             this.pnLoad.SuspendLayout();
             this.tpQuanLy.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btPhuCap
+            // btnChuyenMon
             // 
-            this.btPhuCap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btPhuCap.BackgroundImage")));
-            this.btPhuCap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btPhuCap.Location = new System.Drawing.Point(527, 5);
-            this.btPhuCap.MinimumSize = new System.Drawing.Size(70, 70);
-            this.btPhuCap.Name = "btPhuCap";
-            this.btPhuCap.Size = new System.Drawing.Size(75, 70);
-            this.btPhuCap.TabIndex = 2;
-            this.btPhuCap.UseVisualStyleBackColor = true;
+            this.btnChuyenMon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnChuyenMon.BackgroundImage")));
+            this.btnChuyenMon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnChuyenMon.Location = new System.Drawing.Point(527, 5);
+            this.btnChuyenMon.MinimumSize = new System.Drawing.Size(70, 70);
+            this.btnChuyenMon.Name = "btnChuyenMon";
+            this.btnChuyenMon.Size = new System.Drawing.Size(75, 70);
+            this.btnChuyenMon.TabIndex = 2;
+            this.btnChuyenMon.UseVisualStyleBackColor = true;
+            this.btnChuyenMon.Click += new System.EventHandler(this.btnChuyenMon_Click);
             // 
             // label22
             // 
@@ -171,7 +172,7 @@
             // 
             // tpQuanLy
             // 
-            this.tpQuanLy.Controls.Add(this.btPhuCap);
+            this.tpQuanLy.Controls.Add(this.btnChuyenMon);
             this.tpQuanLy.Controls.Add(this.label22);
             this.tpQuanLy.Controls.Add(this.label12);
             this.tpQuanLy.Controls.Add(this.label11);
@@ -215,25 +216,6 @@
             this.tabPage1.Text = "Hệ Thống";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 79);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 15);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Đăng Xuất";
-            // 
-            // btnDangXuat
-            // 
-            this.btnDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.Image")));
-            this.btnDangXuat.Location = new System.Drawing.Point(11, 6);
-            this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(70, 70);
-            this.btnDangXuat.TabIndex = 1;
-            this.btnDangXuat.UseVisualStyleBackColor = true;
-            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -253,6 +235,25 @@
             this.button12.Size = new System.Drawing.Size(70, 70);
             this.button12.TabIndex = 7;
             this.button12.UseVisualStyleBackColor = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(9, 79);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 15);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Đăng Xuất";
+            // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.Image")));
+            this.btnDangXuat.Location = new System.Drawing.Point(11, 6);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(70, 70);
+            this.btnDangXuat.TabIndex = 1;
+            this.btnDangXuat.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // frmQuanLyNhanSu
             // 
@@ -278,7 +279,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btPhuCap;
+        private System.Windows.Forms.Button btnChuyenMon;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
