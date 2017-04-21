@@ -123,6 +123,12 @@
     <Compile Include="QuanLyNhanSu.Designer.cs">
       <DependentUpon>QuanLyNhanSu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sync.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sync.Designer.cs">
+      <DependentUpon>Sync.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChiNhanh.resx">
       <DependentUpon>ChiNhanh.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyNhanSu.resx">
       <DependentUpon>QuanLyNhanSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sync.resx">
+      <DependentUpon>Sync.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Data.dbml.layout">
       <DependentUpon>Data.dbml</DependentUpon>
@@ -158,6 +167,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Data.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
@@ -239,6 +249,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

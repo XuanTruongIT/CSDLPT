@@ -14,7 +14,7 @@ namespace Dal
 
         public void OpenConnect()
         {
-            const string strConn = @"Data Source=TRAM-2;Initial Catalog=QLNS_TRAM2;Integrated Security=True";
+            const string strConn = @"Data Source=XUANTRUONG;Initial Catalog=QLNS;Persist Security Info=True;User ID=sa;Password=123";
             _conn = new SqlConnection(strConn);
             if (_conn.State == ConnectionState.Closed)
             {

@@ -44,6 +44,10 @@ namespace Bll
         {
             return _nhanVienDal.TimKiem(sql);
         }
-        
+
+        public void Sync(string sql)
+        {
+            _nhanVienDal.Sync(sql);
+        }
     }
 }

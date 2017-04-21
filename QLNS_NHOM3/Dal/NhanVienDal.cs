@@ -11,7 +11,7 @@ namespace Dal
 {
     public class NhanVienDal
     {
-        ConnectDb _connectDb = new ConnectDb();
+        
         public SqlDataAdapter Da;
         public SqlCommand Cmd;
         public DataTable Dt;
@@ -97,6 +97,14 @@ namespace Dal
             Da.Fill(Dt);
             Conn.Close();
             return Dt;
+        }
+
+        public void Sync(string sql)
+        {
+            Conn.Open();
+            Cmd = new SqlCommand(sql,Conn);
+            Cmd.ExecuteNonQuery();
+            Conn.Close();
         }
         
     }

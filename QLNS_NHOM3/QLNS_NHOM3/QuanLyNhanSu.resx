@@ -415,7 +415,7 @@
         yMz7lvep9WgrYnL71nufWo+2IqZ9oNT/Ac7QatdyFGejAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button12.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSync.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAADiRJREFUeF7t
         ncuSE9cZx/0IegQtkhVDPDbYhLtgCME7LZMsgliYpFKV1FRW4TriYgIZB9nOA8wjTCUxMXjTuVZlp6os

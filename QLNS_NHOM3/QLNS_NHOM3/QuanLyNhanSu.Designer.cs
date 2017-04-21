@@ -45,7 +45,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btnSync = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.pnLoad.SuspendLayout();
@@ -205,7 +205,7 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.button12);
+            this.tabPage1.Controls.Add(this.btnSync);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.btnDangXuat);
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
@@ -225,16 +225,17 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "&Cập Nhật";
             // 
-            // button12
+            // btnSync
             // 
-            this.button12.BackColor = System.Drawing.Color.White;
-            this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button12.Location = new System.Drawing.Point(129, 6);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(70, 70);
-            this.button12.TabIndex = 7;
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnSync.BackColor = System.Drawing.Color.White;
+            this.btnSync.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSync.BackgroundImage")));
+            this.btnSync.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSync.Location = new System.Drawing.Point(129, 6);
+            this.btnSync.Name = "btnSync";
+            this.btnSync.Size = new System.Drawing.Size(70, 70);
+            this.btnSync.TabIndex = 7;
+            this.btnSync.UseVisualStyleBackColor = false;
+            this.btnSync.Click += new System.EventHandler(this.btnSync_Click);
             // 
             // label8
             // 
@@ -297,6 +298,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnDangXuat;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnSync;
     }
 }
