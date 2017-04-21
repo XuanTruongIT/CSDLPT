@@ -26,3 +26,10 @@ E:\Co so du lieu phan tan\BTL_Nhom3\CSDLPT\trunk\QLNS_NHOM3\Dal\bin\Debug\Dao.pd
 E:\Co so du lieu phan tan\BTL_Nhom3\CSDLPT\trunk\QLNS_NHOM3\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
 E:\Co so du lieu phan tan\BTL_Nhom3\CSDLPT\trunk\QLNS_NHOM3\Dal\obj\Debug\Dal.dll
 E:\Co so du lieu phan tan\BTL_Nhom3\CSDLPT\trunk\QLNS_NHOM3\Dal\obj\Debug\Dal.pdb
+E:\Co so du lieu phan tan\csdlpt\trunk\QLNS_NHOM3\Dal\bin\Debug\Dal.dll
+E:\Co so du lieu phan tan\csdlpt\trunk\QLNS_NHOM3\Dal\bin\Debug\Dal.pdb
+E:\Co so du lieu phan tan\csdlpt\trunk\QLNS_NHOM3\Dal\bin\Debug\Dao.dll
+E:\Co so du lieu phan tan\csdlpt\trunk\QLNS_NHOM3\Dal\bin\Debug\Dao.pdb
+E:\Co so du lieu phan tan\csdlpt\trunk\QLNS_NHOM3\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+E:\Co so du lieu phan tan\csdlpt\trunk\QLNS_NHOM3\Dal\obj\Debug\Dal.dll
+E:\Co so du lieu phan tan\csdlpt\trunk\QLNS_NHOM3\Dal\obj\Debug\Dal.pdb
