@@ -68,9 +68,9 @@ namespace QLNS_NHOM3
             string sql1 = @"EXEC msdb.dbo.sp_start_job 'XUANTRUONG-QLNS-Rep1-TRAM-1-8'";
             string sql2 = @"EXEC msdb.dbo.sp_start_job 'XUANTRUONG-QLNS-Rep1-TRAM-2-9'";
             string sql3 = @"EXEC msdb.dbo.sp_start_job 'XUANTRUONG-QLNS-Rep1-TRAM-3-10'";
-            //nhanVienBll.Sync(sql1);
-            //nhanVienBll.Sync(sql2);
-            //nhanVienBll.Sync(sql3);
+            nhanVienBll.Sync(sql1);
+            nhanVienBll.Sync(sql2);
+            nhanVienBll.Sync(sql3);
             frmSync frmSync = new frmSync();
             frmSync.Show();
 
