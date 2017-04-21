@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyNhanSu));
             this.btPhuCap = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
@@ -38,13 +37,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btnChucVu = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
             this.pnLoad = new System.Windows.Forms.Panel();
             this.btnChiNhanh = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnPhongBan = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.tpQuanLy = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -135,20 +131,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "PHẦM MỀM QUẢN LÝ NHÂN SỰ";
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(843, 638);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 23);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "label2";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pnLoad
             // 
             this.pnLoad.Controls.Add(this.label3);
@@ -186,17 +168,6 @@
             this.btnPhongBan.TabIndex = 0;
             this.btnPhongBan.UseVisualStyleBackColor = true;
             this.btnPhongBan.Click += new System.EventHandler(this.btnPhongBan_Click);
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(-1, 638);
-            this.label1.Margin = new System.Windows.Forms.Padding(30, 0, 3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(844, 23);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "label1";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tpQuanLy
             // 
@@ -288,9 +259,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.pnLoad);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Name = "frmQuanLyNhanSu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -317,13 +286,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnChucVu;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel pnLoad;
         private System.Windows.Forms.Button btnChiNhanh;
         private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.Button btnPhongBan;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tpQuanLy;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
