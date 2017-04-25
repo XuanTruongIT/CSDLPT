@@ -64,15 +64,26 @@ namespace QLNS_NHOM3
         public int i = 0;
         private void btnSync_Click(object sender, EventArgs e)
         {
-            NhanVienBll nhanVienBll = new NhanVienBll();
-            string sql1 = @"EXEC msdb.dbo.sp_start_job 'XUANTRUONG-QLNS-Rep1-TRAM-1-8'";
-            string sql2 = @"EXEC msdb.dbo.sp_start_job 'XUANTRUONG-QLNS-Rep1-TRAM-2-9'";
-            string sql3 = @"EXEC msdb.dbo.sp_start_job 'XUANTRUONG-QLNS-Rep1-TRAM-3-10'";
-            nhanVienBll.Sync(sql1);
-            nhanVienBll.Sync(sql2);
-            nhanVienBll.Sync(sql3);
-            frmSync frmSync = new frmSync();
-            frmSync.Show();
+            this.Refresh();
+            try
+            {
+                this.Refresh();
+                NhanVienBll nhanVienBll = new NhanVienBll();
+                string sql1 = @"EXEC msdb.dbo.sp_start_job 'XUANTRUONG-QLNS-Rep1-TRAM-1-8'";
+                string sql2 = @"EXEC msdb.dbo.sp_start_job 'XUANTRUONG-QLNS-Rep1-TRAM-2-9'";
+                string sql3 = @"EXEC msdb.dbo.sp_start_job 'XUANTRUONG-QLNS-Rep1-TRAM-3-10'";
+                nhanVienBll.Sync(sql1);
+                nhanVienBll.Sync(sql2);
+                nhanVienBll.Sync(sql3);
+                frmSync frmSync = new frmSync();
+                frmSync.Show();
+            }
+            catch (Exception)
+            {
+                
+                
+            }
+           
 
 
         }
